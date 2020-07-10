@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volunteer Survey Form</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 id="title">Help us make the pandemic end!</h1>
+        <p id="description">
+          Join our community of good-hearted humans to overcome our current
+          situation.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Part Time Job</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>How committed can you be for this cause?</p>
+          <label>
+            <input
+              name="user-commitment"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely 100%</label
+          >
+          <label>
+            <input
+              name="user-commitment"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe 50%</label
+          >
+
+          <label
+            ><input
+              name="user-commitment"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>
+            How can you help the world?
+            <span class="clue">(Check all that you can possibly do)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            />COVID Data Visualization</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-management"
+              type="checkbox"
+              class="input-checkbox"
+            />COVID Data Management</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="open-source-community"
+              type="checkbox"
+              class="input-checkbox"
+            />Helping Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="medical-camps"
+              type="checkbox"
+              class="input-checkbox"
+            />Medical Camps</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="city-meetups"
+              type="checkbox"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="evacuation"
+              type="checkbox"
+              class="input-checkbox"
+            />Evacuation</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="teaching"
+              type="checkbox"
+              class="input-checkbox"
+            />Teaching</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

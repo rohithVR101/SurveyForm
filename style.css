@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body{
+  background-image: linear-gradient(to top, rgba(255, 160, 255, 0.8), rgba(255,118,140,0.8)), url(https://images.unsplash.com/photo-1586293403445-ffa224197984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+form{
+  text-align: left;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group{
+  padding: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button{
+  background-color: #fa1616;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 1.2rem;;
+  min-height: 1.2rem;
+  min-width: 1.2rem;
+}
+
+input[type=text], input[type=email],
+input[type=number],
+select,
+textarea{
+  width: 100%;
+}
